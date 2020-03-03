@@ -19,7 +19,7 @@ jobs:
         cordova-version: 8
             
     - name: Ionic Build
-      run: ionic build --prod -- --base-href http://rodrigowaters.github.io/git-explorer
+      run: ng build --base-href http://rodrigowaters.github.io/git-explorer
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
