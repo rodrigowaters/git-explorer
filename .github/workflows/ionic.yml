@@ -18,10 +18,10 @@ jobs:
           ${{ runner.os }}-node- 
  
     - name: Npm Install package.json
-    - run: npm install
+      run: npm install
         
     - name: Npm Install Angular Cli
-    - run: npm install -g @angular/cli > /dev/null
+      run: npm install -g @angular/cli > /dev/null
             
     - name: Ionic Build
       run: ng build --base-href https://rodrigowaters.github.io/git-explorer
