@@ -9,8 +9,8 @@ import {DataService, Commands, CommandsDetail} from '../services/data.service';
 export class HomePage {
 
     firstCommand: Commands;
-    secondCommand: {};
-    thirdCommand: {};
+    secondCommand: {value:null};
+    thirdCommand: {value:null};
     command: CommandsDetail;
 
     constructor(private data: DataService) {
