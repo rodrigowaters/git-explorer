@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/rodrigowaters/git-explorer.svg?branch=master)](https://travis-ci.com/rodrigowaters/git-explorer)
+
+![Ionic](https://github.com/rodrigowaters/git-explorer/workflows/Ionic/badge.svg?branch=master)
 [![BCH compliance](https://bettercodehub.com/edge/badge/rodrigowaters/git-explorer?branch=master)](https://bettercodehub.com/)
 
 # git-explorer
