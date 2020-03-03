@@ -13,10 +13,8 @@ jobs:
     - name: Install dependencies
       run: npm install
     
-    - name: Use coturiv/setup-ionic
-      uses: coturiv/setup-ionic@v1
-      with:
-        cordova-version: 8
+    - name: Angular Github Actions
+      uses: mayur-rawte/github-angular-actions@latest
             
     - name: Ionic Build
       run: ng build --base-href https://rodrigowaters.github.io/git-explorer
