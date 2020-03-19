@@ -19,16 +19,6 @@ jobs:
  
     - name: Npm Install package.json
       run: npm install
-        
-    - name: Npm Install Angular Cli
-      run: sudo npm install -g @angular/cli > /dev/null
             
     - name: Ionic Build
       run: ng build --base-href https://rodrigowaters.github.io/git-explorer
-    
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./www
-          publish_branch: gh-pages
