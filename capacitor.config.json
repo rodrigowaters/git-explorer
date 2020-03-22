@@ -1,8 +1,0 @@
-{
-  "appId": "com.rodrigowaters.git_explorer",
-  "appName": "Git Explorer",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "cordova": {}
-}
