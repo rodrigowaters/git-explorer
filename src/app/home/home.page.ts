@@ -9,8 +9,11 @@ import {DataService, Commands, CommandsDetail} from '../services/data.service';
 export class HomePage {
 
     firstCommand: Commands;
-    secondCommand: {value:null};
-    thirdCommand: {value:null};
+    secondCommand: {
+        usage: null;
+        value: null
+    };
+    thirdCommand: { value: null };
     command: CommandsDetail;
 
     constructor(private data: DataService) {
@@ -40,12 +43,12 @@ export class HomePage {
     }
 
     showSecondCommand() {
-        let command = this.firstCommand;
+        const command = this.firstCommand;
         return (typeof command === 'object');
     }
 
     getSecondaryOptions(): CommandsDetail[] {
-        let command = this.firstCommand;
+        const command = this.firstCommand;
         if (typeof command === 'object') {
             return this.data.getSecundaryCommands(command.value);
         }
@@ -60,20 +63,20 @@ export class HomePage {
     }
 
     showThirdCommand() {
-        let command = this.secondCommand;
+        const command = this.secondCommand;
 
         let status = false;
         if (typeof command === 'object') {
-            status = (typeof command['usage'] !== 'string');
+            status = (typeof command.usage !== 'string');
         }
 
         return status;
     }
 
     getTertiaryCommands(): CommandsDetail[] {
-        let command = this.secondCommand;
+        const command = this.secondCommand;
         if (typeof command === 'object') {
-            return this.data.getTertiaryCommands(command['value']);
+            return this.data.getTertiaryCommands(command.value);
         }
 
         return [];

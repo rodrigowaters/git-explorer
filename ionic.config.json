@@ -1,7 +1,7 @@
 {
   "name": "Git Explorer",
   "integrations": {
-    "capacitor": {}
+    "cordova": {}
   },
   "type": "angular"
 }
