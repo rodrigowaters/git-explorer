@@ -8,6 +8,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "app:build": "ionic cordova build --release",
+    "app:emulate": "ionic cordova emulate",
+    "app:run": "ionic cordova run",
+    "app:sign": "jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore git-explorer.keystore platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk pokedex",
+    "app:create": "zipalign -v 4 platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk git-explorer.apk",
+    "deploy": "ionic build --prod -- --base-href http://rodrigowaters.github.io/git-explorer/",
+    "deploy_gh": "npx angular-cli-ghpages --dir=www --name='Rodrigo Silva' --email=rdrgwtrs@gmail.com",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
