@@ -43,7 +43,7 @@
     "@angular/compiler": "8.2.14",
     "@angular/compiler-cli": "8.2.14",
     "@angular/language-service": "8.2.14",
-    "@babel/compat-data": "7.10.0",
+    "@babel/compat-data": "7.10.1",
     "@ionic/angular-toolkit": "2.2.0",
     "@types/jasmine": "3.5.10",
     "@types/jasminewd2": "2.0.8",
